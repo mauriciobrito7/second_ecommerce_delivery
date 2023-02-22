@@ -1,9 +1,9 @@
-import { productsModel } from "../models/products.model.js";
+import { ProductsModel } from "../models/products.model.js";
 
 export default class ProductsManager {
  async getProducts() {
   try {
-   return await productsModel.find();
+   return await ProductsModel.find();
   } catch (error) {
    console.log(error);
    return error;
@@ -12,7 +12,7 @@ export default class ProductsManager {
 
  async getProductById(id) {
   try {
-   return await productsModel.findById(id);
+   return await ProductsModel.findById(id);
   } catch (error) {
    console.log(error);
    return error;
@@ -21,7 +21,7 @@ export default class ProductsManager {
 
  async addProduct(product) {
   try {
-   return await productsModel.create(product);
+   return await ProductsModel.create(product);
   } catch (error) {
    console.log(error);
    return error;
@@ -30,7 +30,7 @@ export default class ProductsManager {
 
  async updateProduct(id, product) {
   try {
-   return await productsModel.findByIdAndUpdate(id, product);
+   return await ProductsModel.findByIdAndUpdate(id, product);
   } catch (error) {
    console.log(error);
    return error;
@@ -39,7 +39,7 @@ export default class ProductsManager {
 
  async deleteProduct(id) {
   try {
-   return await productsModel.findByIdAndDelete(id);
+   return await ProductsModel.findByIdAndDelete(id);
   } catch (error) {
    console.log(error);
    return error;
