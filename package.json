@@ -1,0 +1,27 @@
+{
+  "name": "second_ecommerce_delivery",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriciobrito7/second_ecommerce_delivery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauriciobrito7/second_ecommerce_delivery/issues"
+  },
+  "homepage": "https://github.com/mauriciobrito7/second_ecommerce_delivery#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "mongoose-paginate-v2": "^1.7.1",
+    "moongose": "^1.0.0"
+  }
+}
